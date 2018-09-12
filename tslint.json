@@ -4,7 +4,9 @@
     "object-literal-sort-keys": false,
     "ordered-imports": false,
     "import-sources-order": "any",
-    "named-imports-order": "any"
+    "named-imports-order": "any",
+    "no-console": false
+
   },
   "linterOptions": {
     "exclude": [

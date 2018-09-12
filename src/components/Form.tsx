@@ -1,9 +1,16 @@
 import * as React from "react";
 
-class Form extends React.Component {
+interface IProps {
+    getWeather: any
+}
+class Form extends React.Component <IProps> {
     public render() {
         return(
-            <div>Hello Mama</div>
+            <form onSubmit={this.props.getWeather}>
+                <input type="text" name="city" placeholder="City"/>
+                <input type="text" name="country" placeholder="Country"/>
+                <button>Get Weather</button>
+            </form>
         );
     }
 }
