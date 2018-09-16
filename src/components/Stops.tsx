@@ -47,7 +47,7 @@ class Stops extends React.Component<IProps> {
                                                 <Link to={{
                                                     pathname: `/stop/${stop.stop_id}`,
                                                     state: { stop: stop.stop_id }
-                                                }}>View Station Times</Link>
+                                                }}>View Bus Routes</Link>
                                             </button>
                                         </div>
                                     </div>
