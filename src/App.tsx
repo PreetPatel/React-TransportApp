@@ -27,6 +27,9 @@ class App extends React.Component {
   }
 
   public componentDidMount = () => {
+    window.onbeforeunload = () => {
+      localStorage.clear();
+   }
     const json = localStorage.getItem("stops");
     if (json !== null) {
       const stops = JSON.parse(json);
