@@ -58,7 +58,7 @@ class Form extends React.Component<IProps> {
                                         className="form-control"
                                         type="text"
                                         value={value}
-                                        placeholder="Type out an address to see the nearest stops"
+                                        placeholder="Enter an address in Auckland to see the nearest stops"
                                         onChange={this.handleInputChange}
                                     />
 
