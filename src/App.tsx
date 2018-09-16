@@ -38,6 +38,7 @@ class App extends React.Component {
     const stops = JSON.stringify(this.state.stops);
     localStorage.setItem("stops", stops);
   }
+  
 
   public render() {
     return (
