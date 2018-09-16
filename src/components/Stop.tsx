@@ -25,7 +25,6 @@ class Stop extends React.Component<IProps> {
         this.setState({
             routes: data.response
         })
-        console.log(data)
     }
 
     public render() {

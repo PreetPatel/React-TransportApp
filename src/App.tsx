@@ -7,15 +7,8 @@ class App extends React.Component {
 
   public state = {
     stops: [],
-    stop_id: undefined,
-    stop_name: undefined,
-    stop_lat: undefined,
-    stop_lon: undefined,
-    stop_region: undefined,
-    route_type: undefined,
-    latitude: undefined,
-    longitude: undefined,
-    error: false
+    MY_API_KEY : "AIzaSyB41NPGsscTkRIKF-fJOpid45xDYU_2kAc"
+
   }
 
 
@@ -50,8 +43,10 @@ class App extends React.Component {
     return (
       <div>
         <Titles />
-        <Form stopAPI={this.stopAPI} />
-        <Stops stops={this.state.stops} />
+        <Form stopAPI={this.stopAPI} 
+        MY_API_KEY={this.state.MY_API_KEY}/>
+        <Stops stops={this.state.stops} 
+        MY_API_KEY={this.state.MY_API_KEY}/>
       </div>
     );
   }

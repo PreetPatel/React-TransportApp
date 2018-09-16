@@ -6,7 +6,9 @@ class Titles extends React.Component {
         return (
             <div>
                 <header className="App-header">
-                    <h2 className="App-title"><Link to={{ pathname: `/` }} style={{textDecoration: 'none', }}>Auckland Bus Stop Finder</Link></h2>
+                    <div className="App">
+                        <Link className="App-title" to={{ pathname: `/` }} style={{ textDecoration: 'none', color: 'white', fontWeight: 'bold' }}>AUCKLAND STOPS</Link>
+                    </div>
                 </header>
             </div>
         );
