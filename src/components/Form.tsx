@@ -20,6 +20,7 @@ class Form extends React.Component<IProps> {
     }
 
     public handleSelectSuggest = (geocodedPrediction: any, originalPrediction: any) => {
+        localStorage.clear()
         this.props.stopAPI(geocodedPrediction.geometry.location.lat(), geocodedPrediction.geometry.location.lng())
         this.setState({ search: "", value: geocodedPrediction.formatted_address })
     }

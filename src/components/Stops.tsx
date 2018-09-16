@@ -59,6 +59,15 @@ class Stops extends React.Component<IProps> {
                                 )
                             }
                         })}
+                        {this.props.stops.length < 1 &&
+                            <div className="container">
+                            <div className="row" style={{textAlign: 'center'}}>
+                            <h1>To get started: </h1>
+                            <h3>Enter an Auckland Address to view stops 200 metres near that location.</h3>
+                            <h4>Note: Non Auckland addresses do not work as of yet.</h4>
+                            </div>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>

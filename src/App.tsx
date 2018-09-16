@@ -13,11 +13,12 @@ class App extends React.Component {
 
 
   public stopAPI = async (latitude: any, longitude: any) => {
+    localStorage.clear()
     const apiCall = await fetch(`https://waka.app/a/nz-akl/station/search?lat=${latitude}&lon=${longitude}&distance=200`);
     const data = await apiCall.json();
     if (data.length === 0) {
       this.setState({
-        error: true
+        stops: [],
       })
     } else {
       this.setState({
