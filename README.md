@@ -1,5 +1,5 @@
 # Auckland Stops
-## A React & TypeScript Project
+##### A React & TypeScript Project
 
 ![Main Screen](https://github.com/PreetPatel/React-TransportApp/blob/master/Main.PNG)
 Searching for buses only works for Auckland Addresses for now. You can start typing an address and using autocomplete, the app will show you addresses matching the typed words.
